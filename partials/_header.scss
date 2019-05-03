@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+p,
+a,
+img{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+// make text white to see shit
+h1,h2,h3,h4,h5,a,p,li,i{
+  color: white;
+}
+// take out after done
+
+// take out auto margins/padding
+
+header{
+  background-image:url(../assets/home-image-1.jpg);
+  background-position: center center;
+  height:80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// blog styling
+.blogHeader{
+  background-image:url(../assets/blog-image-1.jpg);
+  background-position: center center;
+  height:80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.greenBorder{
+  border: 2px solid #555f02;
+}
+
+//contact styling
+.contactHeader{
+  background-image:url(../assets/contact-image-1.jpg);
+  background-position: center center;
+  height:80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.formContact{
+  width: 500px;
+  height: 500px;
+}

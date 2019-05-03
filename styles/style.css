@@ -394,3 +394,78 @@ header {
   -webkit-box-shadow: -20px 20px #555f02;
           box-shadow: -20px 20px #555f02;
 }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5% 0;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icons .iconRowOne,
+.icons .iconRowTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons .iconRowOne .iconOne h3,
+.icons .iconRowOne .iconTwo h3,
+.icons .iconRowOne .iconThree h3,
+.icons .iconRowOne .iconFour h3,
+.icons .iconRowTwo .iconOne h3,
+.icons .iconRowTwo .iconTwo h3,
+.icons .iconRowTwo .iconThree h3,
+.icons .iconRowTwo .iconFour h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+  color: #ffc600;
+}
+
+.icons .iconRowOne .iconOne p,
+.icons .iconRowOne .iconTwo p,
+.icons .iconRowOne .iconThree p,
+.icons .iconRowOne .iconFour p,
+.icons .iconRowTwo .iconOne p,
+.icons .iconRowTwo .iconTwo p,
+.icons .iconRowTwo .iconThree p,
+.icons .iconRowTwo .iconFour p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.icons .iconRowOne .iconOne,
+.icons .iconRowTwo .iconOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons .iconRowOne .fas, .icons .iconRowOne .far,
+.icons .iconRowTwo .fas,
+.icons .iconRowTwo .far {
+  padding: 20px;
+  background: #555f02;
+  color: #fafffe;
+  border: 1px solid #555f02;
+  border-radius: 50%;
+  font-size: 20px;
+}

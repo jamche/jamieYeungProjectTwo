@@ -20,7 +20,6 @@
     flex-direction: row;
     padding: 15% 0;
     justify-content: space-between;
-    
 
     .adventuresText{
       width: 70%;
@@ -39,5 +38,44 @@
       width: 25%;
       box-shadow: -20px 20px #555f02;
     }
+  }
 
+  // gallery styling
+  .gallery{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+  }
+  // icons styling
+  .icons{
+    display: flex;
+    flex-direction: column;
+
+    .iconRowOne,
+    .iconRowTwo{
+      display: flex;
+
+      .iconOne h3,
+      .iconTwo h3,
+      .iconThree h3,
+      .iconFour h3{
+        @include fontsH3(45px, 58px, 4.9px);
+      }
+      .iconOne p,
+      .iconTwo p,
+      .iconThree p,
+      .iconFour p{
+         @include fontsP(20px, 32px, 2px);
+      } 
+      .iconOne{
+        display: flex;         
+      }
+      .fas, .far{
+          padding: 20px;
+          @include iconStyle(20px);
+        }
+
+    }
+
+  
   }

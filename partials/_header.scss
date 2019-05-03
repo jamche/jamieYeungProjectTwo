@@ -39,6 +39,15 @@
   border: none;
   text-transform: capitalize;
 }
+@mixin iconStyle($sizeValue){
+  background: #555f02;
+  color:#fafffe;
+  border: 1px solid #555f02;
+  border-radius: 50%;
+  font-size: $sizeValue;
+
+
+}
 // font-family: 'Dokdo', cursive;
 // font-family: 'Lato', sans-serif;
 // take out auto margins/padding/text decoration

@@ -46,7 +46,7 @@
   border: 1px solid #555f02;
   border-radius: 50%;
   text-align: center;
-  padding:15px 15px;
+  padding:15px;
   width: $widValue;
 }
 // font-family: 'Dokdo', cursive;
@@ -86,8 +86,7 @@ h1,h2,h3,h4,h5,a,p,li,i{
 // global styles
 
 .wrapper{
-  max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 10%;
 }
 // home styling
 header{
@@ -97,7 +96,6 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
   .upperHeader{
     display: flex;
 
@@ -136,11 +134,18 @@ header{
     }
       .headerTextR p{
         @include fontsLato(45px);
-
       }
       .headerTextR h2{
         @include fontsDokdo(115px);
       }
+  }
+
+
+  .freeTrials{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
 

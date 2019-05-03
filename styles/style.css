@@ -213,8 +213,7 @@ h1, h2, h3, h4, h5, a, p, li, i {
 }
 
 .wrapper {
-  max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 10%;
 }
 
 header {
@@ -300,6 +299,18 @@ header {
   font-family: 'Dokdo', cursive;
   font-size: 115px;
   color: #ffc600;
+}
+
+.freeTrials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 .blogHeader {
@@ -529,7 +540,7 @@ header {
   border: 1px solid #555f02;
   border-radius: 50%;
   text-align: center;
-  padding: 15px 15px;
+  padding: 15px;
   width: 50px;
 }
 
@@ -540,21 +551,42 @@ header {
   display: flex;
 }
 
-.groupPrograms .groupProgramsText,
-.groupPrograms .newLocationsText,
-.groupPrograms .groupProgramsPic,
-.groupPrograms .newLocationsText,
-.newLocations .groupProgramsText,
-.newLocations .newLocationsText,
-.newLocations .groupProgramsPic,
-.newLocations .newLocationsText {
+.groupPrograms,
+.newLocations {
+  padding: 5% 0;
+}
+
+.groupProgramsText {
+  width: 40%;
+  margin: 0 10%;
+}
+
+.newLocationsText {
+  width: 40%;
+  margin: 0 10%;
+}
+
+.groupProgramsPic,
+.newLocationsPic {
   width: 50%;
 }
 
-.groupPrograms .groupProgramsText h3,
-.groupPrograms .newLocationsText h3,
-.newLocations .groupProgramsText h3,
-.newLocations .newLocationsText h3 {
+.groupProgramsPic {
+  -webkit-box-shadow: 20px 20px #ffc600;
+          box-shadow: 20px 20px #ffc600;
+  margin-top: -8%;
+  margin-right: 10%;
+}
+
+.newLocationsPic {
+  -webkit-box-shadow: -20px 20px #ffc600;
+          box-shadow: -20px 20px #ffc600;
+  margin-bottom: -8%;
+  margin-left: 10%;
+}
+
+.groupProgramsText h3,
+.newLocationsText h3 {
   font-family: 'Dokdo', cursive;
   font-size: 45px;
   line-height: 58px;
@@ -562,10 +594,13 @@ header {
   color: #ffc600;
 }
 
-.groupPrograms .groupProgramsText p,
-.groupPrograms .newLocationsText p,
-.newLocations .groupProgramsText p,
-.newLocations .newLocationsText p {
+.rightButton,
+.newLocationsText h3 {
+  text-align: right;
+}
+
+.groupProgramsText p,
+.newLocationsText p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -573,13 +608,12 @@ header {
   font-weight: 400;
 }
 
-.groupPrograms .readMore,
-.newLocations .readMore {
+.readMore {
   background: #555f02;
   color: #fafffe;
   font-size: 20px;
   font-family: 'Dokdo', cursive;
-  padding: 1%;
+  padding: 3%;
   margin-top: 3%;
   border: none;
   text-transform: capitalize;

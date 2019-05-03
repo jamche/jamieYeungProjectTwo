@@ -88,23 +88,47 @@
   .groupPrograms,
   .newLocations{
     display: flex;
+  }
+  .groupPrograms,
+  .newLocations{
+    padding: 5% 0;
+  }  
 
-    .groupProgramsText,
-    .newLocationsText,
-    .groupProgramsPic,
+    .groupProgramsText{
+      width: 40%;
+      margin: 0 10%;
+    }
     .newLocationsText{
+      width: 40%;
+      margin: 0 10%;
+    }
+    .groupProgramsPic,
+    .newLocationsPic{
       width: 50%;
     }
+    .groupProgramsPic{
+      box-shadow: 20px 20px #ffc600;
+      margin-top: -8%;
+      margin-right: 10%;
+    }
+    .newLocationsPic{
+      box-shadow: -20px 20px #ffc600;
+      margin-bottom: -8%;
+      margin-left: 10%;
+    }
+
       .groupProgramsText h3,
       .newLocationsText h3{
         @include fontsH3(45px, 58px, 4.9px);
+      }
+      .rightButton,
+      .newLocationsText h3{
+        text-align: right;
       }
       .groupProgramsText p,
       .newLocationsText p{
         @include fontsP(20px, 32px, 2px); 
       }
       .readMore{
-        @include buttonStyle(3%, 1%);
+        @include buttonStyle(3%, 3%);
       }
-
-  }  

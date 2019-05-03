@@ -39,14 +39,15 @@
   border: none;
   text-transform: capitalize;
 }
-@mixin iconStyle($sizeValue){
+@mixin iconStyle($widValue){
   background: #555f02;
+  display: inline-block;
   color:#fafffe;
   border: 1px solid #555f02;
   border-radius: 50%;
-  font-size: $sizeValue;
-
-
+  text-align: center;
+  padding:15px 15px;
+  width: $widValue;
 }
 // font-family: 'Dokdo', cursive;
 // font-family: 'Lato', sans-serif;
@@ -170,3 +171,11 @@ header{
   width: 500px;
   height: 500px;
 }
+
+
+
+// https://stackoverflow.com/questions/23348266/equal-padding-for-different-sized-icons
+// reference for how to make the third icon in the Icons section not an oval
+
+// https://www.cssmatic.com/box-shadow 
+// to practice box-shadow

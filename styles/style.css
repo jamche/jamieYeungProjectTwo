@@ -413,6 +413,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 10% 0;
 }
 
 .icons .iconRowOne,
@@ -420,16 +421,59 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 1% auto;
 }
 
-.icons .iconRowOne .iconOne h3,
-.icons .iconRowOne .iconTwo h3,
-.icons .iconRowOne .iconThree h3,
-.icons .iconRowOne .iconFour h3,
-.icons .iconRowTwo .iconOne h3,
-.icons .iconRowTwo .iconTwo h3,
-.icons .iconRowTwo .iconThree h3,
-.icons .iconRowTwo .iconFour h3 {
+.icons .iconRowOne .iconText,
+.icons .iconRowTwo .iconText {
+  margin-left: 2%;
+}
+
+.icons .iconRowOne .iconOne,
+.icons .iconRowOne .iconTwo,
+.icons .iconRowOne .iconThree,
+.icons .iconRowOne .iconFour,
+.icons .iconRowTwo .iconOne,
+.icons .iconRowTwo .iconTwo,
+.icons .iconRowTwo .iconThree,
+.icons .iconRowTwo .iconFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icons .iconRowOne .iconOne .iconText h3,
+.icons .iconRowOne .iconOne .iconText h3,
+.icons .iconRowOne .iconOne .iconText h3,
+.icons .iconRowOne .iconOne .iconText h3,
+.icons .iconRowOne .iconTwo .iconText h3,
+.icons .iconRowOne .iconTwo .iconText h3,
+.icons .iconRowOne .iconTwo .iconText h3,
+.icons .iconRowOne .iconTwo .iconText h3,
+.icons .iconRowOne .iconThree .iconText h3,
+.icons .iconRowOne .iconThree .iconText h3,
+.icons .iconRowOne .iconThree .iconText h3,
+.icons .iconRowOne .iconThree .iconText h3,
+.icons .iconRowOne .iconFour .iconText h3,
+.icons .iconRowOne .iconFour .iconText h3,
+.icons .iconRowOne .iconFour .iconText h3,
+.icons .iconRowOne .iconFour .iconText h3,
+.icons .iconRowTwo .iconOne .iconText h3,
+.icons .iconRowTwo .iconOne .iconText h3,
+.icons .iconRowTwo .iconOne .iconText h3,
+.icons .iconRowTwo .iconOne .iconText h3,
+.icons .iconRowTwo .iconTwo .iconText h3,
+.icons .iconRowTwo .iconTwo .iconText h3,
+.icons .iconRowTwo .iconTwo .iconText h3,
+.icons .iconRowTwo .iconTwo .iconText h3,
+.icons .iconRowTwo .iconThree .iconText h3,
+.icons .iconRowTwo .iconThree .iconText h3,
+.icons .iconRowTwo .iconThree .iconText h3,
+.icons .iconRowTwo .iconThree .iconText h3,
+.icons .iconRowTwo .iconFour .iconText h3,
+.icons .iconRowTwo .iconFour .iconText h3,
+.icons .iconRowTwo .iconFour .iconText h3,
+.icons .iconRowTwo .iconFour .iconText h3 {
   font-family: 'Dokdo', cursive;
   font-size: 45px;
   line-height: 58px;
@@ -437,14 +481,38 @@ header {
   color: #ffc600;
 }
 
-.icons .iconRowOne .iconOne p,
-.icons .iconRowOne .iconTwo p,
-.icons .iconRowOne .iconThree p,
-.icons .iconRowOne .iconFour p,
-.icons .iconRowTwo .iconOne p,
-.icons .iconRowTwo .iconTwo p,
-.icons .iconRowTwo .iconThree p,
-.icons .iconRowTwo .iconFour p {
+.icons .iconRowOne .iconOne .iconText p,
+.icons .iconRowOne .iconOne .iconText p,
+.icons .iconRowOne .iconOne .iconText p,
+.icons .iconRowOne .iconOne .iconText p,
+.icons .iconRowOne .iconTwo .iconText p,
+.icons .iconRowOne .iconTwo .iconText p,
+.icons .iconRowOne .iconTwo .iconText p,
+.icons .iconRowOne .iconTwo .iconText p,
+.icons .iconRowOne .iconThree .iconText p,
+.icons .iconRowOne .iconThree .iconText p,
+.icons .iconRowOne .iconThree .iconText p,
+.icons .iconRowOne .iconThree .iconText p,
+.icons .iconRowOne .iconFour .iconText p,
+.icons .iconRowOne .iconFour .iconText p,
+.icons .iconRowOne .iconFour .iconText p,
+.icons .iconRowOne .iconFour .iconText p,
+.icons .iconRowTwo .iconOne .iconText p,
+.icons .iconRowTwo .iconOne .iconText p,
+.icons .iconRowTwo .iconOne .iconText p,
+.icons .iconRowTwo .iconOne .iconText p,
+.icons .iconRowTwo .iconTwo .iconText p,
+.icons .iconRowTwo .iconTwo .iconText p,
+.icons .iconRowTwo .iconTwo .iconText p,
+.icons .iconRowTwo .iconTwo .iconText p,
+.icons .iconRowTwo .iconThree .iconText p,
+.icons .iconRowTwo .iconThree .iconText p,
+.icons .iconRowTwo .iconThree .iconText p,
+.icons .iconRowTwo .iconThree .iconText p,
+.icons .iconRowTwo .iconFour .iconText p,
+.icons .iconRowTwo .iconFour .iconText p,
+.icons .iconRowTwo .iconFour .iconText p,
+.icons .iconRowTwo .iconFour .iconText p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -452,20 +520,67 @@ header {
   font-weight: 400;
 }
 
-.icons .iconRowOne .iconOne,
-.icons .iconRowTwo .iconOne {
+.icons .iconRowOne .fas, .icons .iconRowOne .far,
+.icons .iconRowTwo .fas,
+.icons .iconRowTwo .far {
+  background: #555f02;
+  display: inline-block;
+  color: #fafffe;
+  border: 1px solid #555f02;
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px 15px;
+  width: 50px;
+}
+
+.groupPrograms,
+.newLocations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.icons .iconRowOne .fas, .icons .iconRowOne .far,
-.icons .iconRowTwo .fas,
-.icons .iconRowTwo .far {
-  padding: 20px;
+.groupPrograms .groupProgramsText,
+.groupPrograms .newLocationsText,
+.groupPrograms .groupProgramsPic,
+.groupPrograms .newLocationsText,
+.newLocations .groupProgramsText,
+.newLocations .newLocationsText,
+.newLocations .groupProgramsPic,
+.newLocations .newLocationsText {
+  width: 50%;
+}
+
+.groupPrograms .groupProgramsText h3,
+.groupPrograms .newLocationsText h3,
+.newLocations .groupProgramsText h3,
+.newLocations .newLocationsText h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+  color: #ffc600;
+}
+
+.groupPrograms .groupProgramsText p,
+.groupPrograms .newLocationsText p,
+.newLocations .groupProgramsText p,
+.newLocations .newLocationsText p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.groupPrograms .readMore,
+.newLocations .readMore {
   background: #555f02;
   color: #fafffe;
-  border: 1px solid #555f02;
-  border-radius: 50%;
   font-size: 20px;
+  font-family: 'Dokdo', cursive;
+  padding: 1%;
+  margin-top: 3%;
+  border: none;
+  text-transform: capitalize;
 }

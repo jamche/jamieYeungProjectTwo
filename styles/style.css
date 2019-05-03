@@ -194,9 +194,17 @@ img {
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -204,12 +212,94 @@ h1, h2, h3, h4, h5, a, p, li, i {
   color: white;
 }
 
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 header {
   background-image: url(../assets/home-image-1.jpg);
   background-position: center center;
-  height: 80vh;
+  height: 110vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.upperHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.upperHeader .mainTitle,
+.upperHeader .navbar {
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.upperHeader .mainTitle h1 {
+  font-family: 'Dokdo', cursive;
+  font-size: 41.5px;
+  color: #ffc600;
+  line-height: 58px;
+  letter-spacing: 4.3px;
+}
+
+.upperHeader .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.upperHeader .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.headerBot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15%;
+}
+
+.headerBot .headerPic {
+  width: 45%;
+}
+
+.headerBot .headerTextR {
+  width: 55%;
+  margin: 3% 0 0 5%;
+}
+
+.headerBot .headerTextR p {
+  font-size: 45px;
+  font-family: 'Lato', sans-serif;
+}
+
+.headerBot .headerTextR h2 {
+  font-family: 'Dokdo', cursive;
+  font-size: 115px;
+  color: #ffc600;
 }
 
 .blogHeader {
@@ -251,4 +341,56 @@ header {
   height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.adventures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adventures .adventuresText {
+  width: 70%;
+  margin-right: 5%;
+}
+
+.adventures .adventuresText h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+  color: #ffc600;
+}
+
+.adventures .adventuresText p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.adventures .findMore {
+  background: #555f02;
+  color: #fafffe;
+  font-size: 20px;
+  font-family: 'Dokdo', cursive;
+  padding: 1%;
+  margin-top: 2%;
+  border: none;
+  text-transform: capitalize;
+}
+
+.adventures .adventuresPic {
+  width: 25%;
+  -webkit-box-shadow: -20px 20px #555f02;
+          box-shadow: -20px 20px #555f02;
 }

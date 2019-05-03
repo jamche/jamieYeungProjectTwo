@@ -1,3 +1,47 @@
+@mixin fontsDokdo($sizeValue) {
+  font-family: 'Dokdo', cursive;
+  font-size: ($sizeValue);
+  color:#ffc600;
+}
+@mixin fontsLato($sizeValue) {
+  font-size: ($sizeValue);
+  font-family: 'Lato', sans-serif;
+}
+@mixin navStyle($sizeValue, $heightValue, $lSpacing) {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: ($sizeValue);
+  line-height: ($heightValue);
+  letter-spacing: ($lSpacing);
+}
+@mixin fontsH3($sizeValue, $heightValue, $lSpacing){
+  font-family: 'Dokdo', cursive;
+  font-size: ($sizeValue);
+  line-height: ($heightValue);
+  letter-spacing: ($lSpacing); 
+  color:#ffc600;
+}
+@mixin fontsP($sizeValue, $heightValue, $lSpacing){
+  font-family: 'Lato', sans-serif;
+  font-size: ($sizeValue);
+  line-height: ($heightValue);
+  letter-spacing: ($lSpacing); 
+  font-weight: 400;
+}
+@mixin buttonStyle($mTop, $padValue){
+  background: #555f02;
+  color: #fafffe;
+  font-size: 20px;
+  font-family: 'Dokdo', cursive;
+  padding:($padValue);
+  margin-top: ($mTop);
+  border: none;
+  text-transform: capitalize;
+}
+// font-family: 'Dokdo', cursive;
+// font-family: 'Lato', sans-serif;
+// take out auto margins/padding/text decoration
 h1,
 h2,
 h3,
@@ -12,10 +56,15 @@ img{
   margin: 0;
   padding: 0;
 }
-
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
 img{
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -24,16 +73,68 @@ h1,h2,h3,h4,h5,a,p,li,i{
   color: white;
 }
 // take out after done
+// global styles
 
-// take out auto margins/padding
-
+.wrapper{
+  max-width: 1250px;
+  margin: 0 auto;
+}
+// home styling
 header{
   background-image:url(../assets/home-image-1.jpg);
   background-position: center center;
-  height:80vh;
+  height:110vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+  .upperHeader{
+    display: flex;
+
+    .mainTitle,
+    .navbar{
+      width: 50%;
+      justify-content: space-between;
+    }
+    .mainTitle h1{
+      @include fontsDokdo(41.5px);
+      line-height: 58px;
+      letter-spacing: 4.3px;
+    }
+    .navbar{
+      display: flex;
+      justify-content: flex-end;
+    }
+      .navbar ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        @include navStyle(20px, 29px, 1px);
+      }
+  }
+  .headerBot{
+    display: flex;
+    margin-top: 15%;
+    
+    .headerPic{
+      width: 45%;
+    }
+    .headerTextR{
+      width: 55%;
+      margin: 3% 0 0 5%;
+    }
+      .headerTextR p{
+        @include fontsLato(45px);
+
+      }
+      .headerTextR h2{
+        @include fontsDokdo(115px);
+      }
+  }
+
+
+
 
 // blog styling
 .blogHeader{

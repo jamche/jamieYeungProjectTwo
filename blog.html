@@ -16,12 +16,12 @@
         <h1>Mindn'soul</h1>
       </div>
       <nav class="navbar">
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
       </nav>
     </div>
     <div class="blogSpot wrapper">
@@ -52,11 +52,11 @@
         <img src="assets/sidebar-image.jpg" alt="picture of flat stones stacked on top of each other ">
       </div>
       <div class="asideTextContainer">
-        <div>
+        <div class="mission">
           <h4>Our mission</h4>
-          <p>Name dapibus nisi vitae elit iringilla rutrum. Aenean sollicitudin erat a eleraentum.Find out more</p>
+          <p>Name dapibus nisi vitae elit <br> iringilla rutrum. Aenean <br>sollicitudin erat a eleraentum. <br> Find out more</p>
         </div>
-        <div>
+        <div class="recent">
           <h4>Recent Posts</h4>
           <ul>
             <li>Donec facillisis tortor ut</li>
@@ -70,44 +70,60 @@
   </aside>
 </div>
     <!-- comments section -->
-    <section>
-      <div>
+    <section class="wrapper">
+      <div class="commentsContainer">
         <h3>Comments:</h3>
-        <div>
-          <div>
+        <div class="commentImageOne">
+          <div class="commentImage">
             <img src="assets/comment-image.jpg" alt="photo of man in black shirt and black hat">
           </div>
-          <div>
-            <h3>Tuesday October 9th, 2019 by Davin</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur impedit voluptatum consequatur tempora ipsam.</p>
+          <div class="commentText">
+            <h4>Tuesday October 9th, 2019 by Davin</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="commentImageTwo">
+          <div class="commentImage">
             <img src="assets/comment-image2.jpg" alt="photo of two zebras in the wold">
           </div>
-          <div>
-            <h3>Wednesday October 10th, 2019 by Lisa</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur impedit voluptatum consequatur tempora ipsam.</p>
+          <div class="commentText">
+            <h4>Wednesday October 10th, 2019 by Lisa</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
           </div>
         </div>
       </div>
     </section>
     <!-- form sign up -->
     <section>
-      <form action="">
-        <label for="name">name</label>
-        <input type="text" name="name" placeholder="Name" id="name">
-
-        <label for="email">email address</label>
-        <input type="email" name="email" placeholder="Email address" id="email">
-
-        <label for="comments">comment</label>
-        <input type="text" name="comments" placeholder="Comment" id="comments">
-        <button type="submit">Post Comment</button>
+      <form class="wrapper blogForm" action="submit">
+        <div class="nameEmailContainer">
+          <div class="nameInput">
+            <label class="visuallyHidden" for="name">name</label>
+            <input type="text" name="name" placeholder="Name" id="name">
+          </div>
+          <div class="emailInput">
+            <label class="visuallyHidden" for="email">email address</label>
+            <input type="email" name="email" placeholder="Email address" id="email">
+          </div>
+        </div>
+        <div class="commentsInput">
+          <label class="visuallyHidden" for="comments">comment</label>
+          <textarea name="comments" id="comments" placeholder="Comment" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <button class="commentButton" type="submit">Post Comment</button>
+        </div>
       </form>
     </section>
   </main>
+
+  <footer>
+    <section class="charcoalBack">
+      <div class="wrapper copyBlog">
+        <p>Copyright &copy 2019 HackerYou</p>
+      </div>
+    </section>
+  </footer>
 
   
 </body>

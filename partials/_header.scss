@@ -157,12 +157,8 @@ header{
   height:80vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
 
-}
-.formContact{
-  width: 500px;
-  height: 500px;
-}
 
 
 
@@ -173,4 +169,7 @@ header{
 // to practice box-shadow
 
 // https://markheath.net/post/font-awesome-circle-background
-// reference for making icons circular with different icons regardless of width/height
+// reference for making icons circular with different icons regardless of width/height, especially the iconThree which had a different sized height due to the icon being different
+
+// https://www.lockedownseo.com/change-the-bullet-color-of-a-list-item-with-css/
+// reference for how to make the bullet points yellow instead of default white color

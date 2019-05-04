@@ -18,3 +18,11 @@
   text-align: center;
   @include fontsP(20px, 32px, 2px);
 }   
+
+
+//footer blog
+.copyBlog{
+  width: 48%;
+  text-align: right;
+  @include fontsP(20px, 32px, 2px);
+}

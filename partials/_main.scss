@@ -176,10 +176,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-width: 5px 5px 5px 0;
+    border-width: 6px 6px 6px 0;
     border-style: solid; 
     border-color: #555f02;
-    padding-left: 10%;
+    padding-left: 16%;
   }
     .belowGong h3{
       @include fontsH3(45px, 58px, 4.9px);
@@ -201,16 +201,123 @@
     }
 // side aside styling
 aside{
-  width: 25%;
+  width: 20%;
 }  
   .stackedRocks img{
     box-shadow: -15px 15px #555f02;
   }
   .asideTextContainer{
     background: #555f02;
+    border-width: 6px 0 6px 6px;
+    border-style: solid; 
+    border-color: #555f02;
+  }
+    .mission,
+    .recent{
+      padding:3%;
+    }
+      .mission h4,
+      .recent h4{
+        @include fontsP(30px, 32px, 2px);
+        font-family: 'Dokdo', cursive;
+        padding:2% 0;
+      }
+      .mission p,
+      .recent li{
+        @include fontsP(20px, 32px, 2px);
+      }
+        .recent ul li::before{
+          content: "\2022"; 
+          color: #ffc600;
+          font-size:1em;
+          padding-right: 1em;
+          position: relative;
+          top: 0em;
+        }
+// comments section styling
+
+.commentsContainer{
+  width: 60%;
+  
+  h3{
+    @include fontsH3(45px, 58px, 4.9px);
+    color:#fafffe;
+    padding-bottom: 2%;
+
+  }
+}
+  .commentImageOne,
+  .commentImageTwo{
+    display: flex;
+    padding: 5% 0;
+    
+      h4{
+        @include fontsP(20px, 32px, 2px);
+        color:#ffc600;
+      }
+      p{
+        @include fontsP(20px, 32px, 2px);
+      }
+  }
+  .commentImage{
+    width: 20%;
+    padding-right: 5%;
+  }
+  .commentText{
+    width: 80%;
   }
 
+  // form styling
+.blogForm{
+  padding-bottom: 5%;
+}
+
+.nameEmailContainer label{
+  color:#fafffe;
+}
+
+.nameEmailContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.nameInput,
+.emailInput{
+  border-bottom: 1px solid #ffc600;
+  width: 40%;
+}
+.nameInput input,
+.emailInput input{
+  padding:0 0 10% 10%;
+  @include fontsP(20px, 32px, 2px);
+}
+  input,
+  textarea{
+    border: none;
+    background: #1e140e;
+    color:#fafffe;
+    width: 100%;
+    resize: none;
+    @include fontsP(20px, 32px, 2px);
+  }
+.commentsInput{
+  width: 60%;
+  border: 1px solid #ffc600;
+  margin: 5% 0;
+  padding: 1% 1%;
+}
+.commentButton{
+  width: 60%;
+  @include buttonStyle(2% 0, 1% 5%);
+  font-size: 30px;
+}
+
+// contact html styling
 
 
-
-
+// textarea{
+//   width: 100%;
+//   background: #1e140e;
+//   border: none;
+//   color:  color:#fafffe;
+// }

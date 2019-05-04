@@ -39,16 +39,16 @@
   border: none;
   text-transform: capitalize;
 }
-@mixin iconStyle($widValue){
-  background: #555f02;
-  display: inline-block;
-  color:#fafffe;
-  border: 1px solid #555f02;
-  border-radius: 50%;
-  text-align: center;
-  padding:15px;
-  width: $widValue;
-}
+// @mixin iconStyle($widValue){
+//   background: #555f02;
+//   display: inline-block;
+//   color:#fafffe;
+//   border: 1px solid #555f02;
+//   border-radius: 50%;
+//   text-align: center;
+//   padding:15px;
+//   width: $widValue;
+// }
 // font-family: 'Dokdo', cursive;
 // font-family: 'Lato', sans-serif;
 // take out auto margins/padding/text decoration
@@ -75,7 +75,6 @@ a{
 img{
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 // make text white to see shit
@@ -148,9 +147,6 @@ header{
     text-align: center;
   }
 
-
-
-
 // blog styling
 .blogHeader{
   background-image:url(../assets/blog-image-1.jpg);
@@ -184,3 +180,6 @@ header{
 
 // https://www.cssmatic.com/box-shadow 
 // to practice box-shadow
+
+// https://markheath.net/post/font-awesome-circle-background
+// reference for making icons circular with different icons regardless of width/height

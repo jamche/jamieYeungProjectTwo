@@ -36,9 +36,11 @@
       }
     .adventuresPic{
       width: 25%;
-      box-shadow: -20px 20px #555f02;
     }
-  }
+      .adventuresPic img{
+        box-shadow: -15px 15px #555f02;
+      }
+    }
 
   // gallery styling
   .gallery{
@@ -46,6 +48,9 @@
     justify-content: space-between;
     padding: 5% 0;
   }
+    .galleryImg{
+      width: 31%;
+    }
   // icons styling
   .icons{
     display: flex;
@@ -78,10 +83,13 @@
         .iconText p{
           @include fontsP(20px, 32px, 2px);
         }
-      }  
-      .fas, .far{
-          @include iconStyle(50px);
       }
+      .icon-background{
+        color:#555f02;
+      }  
+      // .fas, .far{
+      //     @include iconStyle(50px);
+      // }
     }
   }
   // Group Programs styling
@@ -107,16 +115,20 @@
       width: 50%;
     }
     .groupProgramsPic{
-      box-shadow: 20px 20px #ffc600;
-      margin-top: -8%;
+      margin-top: -7%;
       margin-right: 10%;
     }
+      .groupProgramsPic img{
+        box-shadow: 15px 15px #ffc600;
+      }
+      
     .newLocationsPic{
-      box-shadow: -20px 20px #ffc600;
-      margin-bottom: -8%;
+      margin-bottom: -7%;
       margin-left: 10%;
     }
-
+      .newLocationsPic img{
+        box-shadow: -15px 15px #ffc600;
+      }
       .groupProgramsText h3,
       .newLocationsText h3{
         @include fontsH3(45px, 58px, 4.9px);
@@ -130,5 +142,5 @@
         @include fontsP(20px, 32px, 2px); 
       }
       .readMore{
-        @include buttonStyle(3%, 3%);
+        @include buttonStyle(3%, 2% 5%);
       }

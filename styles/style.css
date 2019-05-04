@@ -205,7 +205,6 @@ a {
 img {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 h1, h2, h3, h4, h5, a, p, li, i {
@@ -402,8 +401,11 @@ header {
 
 .adventures .adventuresPic {
   width: 25%;
-  -webkit-box-shadow: -20px 20px #555f02;
-          box-shadow: -20px 20px #555f02;
+}
+
+.adventures .adventuresPic img {
+  -webkit-box-shadow: -15px 15px #555f02;
+          box-shadow: -15px 15px #555f02;
 }
 
 .gallery {
@@ -414,6 +416,10 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5% 0;
+}
+
+.galleryImg {
+  width: 31%;
 }
 
 .icons {
@@ -531,17 +537,9 @@ header {
   font-weight: 400;
 }
 
-.icons .iconRowOne .fas, .icons .iconRowOne .far,
-.icons .iconRowTwo .fas,
-.icons .iconRowTwo .far {
-  background: #555f02;
-  display: inline-block;
-  color: #fafffe;
-  border: 1px solid #555f02;
-  border-radius: 50%;
-  text-align: center;
-  padding: 15px;
-  width: 50px;
+.icons .iconRowOne .icon-background,
+.icons .iconRowTwo .icon-background {
+  color: #555f02;
 }
 
 .groupPrograms,
@@ -572,17 +570,23 @@ header {
 }
 
 .groupProgramsPic {
-  -webkit-box-shadow: 20px 20px #ffc600;
-          box-shadow: 20px 20px #ffc600;
-  margin-top: -8%;
+  margin-top: -7%;
   margin-right: 10%;
 }
 
+.groupProgramsPic img {
+  -webkit-box-shadow: 15px 15px #ffc600;
+          box-shadow: 15px 15px #ffc600;
+}
+
 .newLocationsPic {
-  -webkit-box-shadow: -20px 20px #ffc600;
-          box-shadow: -20px 20px #ffc600;
-  margin-bottom: -8%;
+  margin-bottom: -7%;
   margin-left: 10%;
+}
+
+.newLocationsPic img {
+  -webkit-box-shadow: -15px 15px #ffc600;
+          box-shadow: -15px 15px #ffc600;
 }
 
 .groupProgramsText h3,
@@ -613,8 +617,49 @@ header {
   color: #fafffe;
   font-size: 20px;
   font-family: 'Dokdo', cursive;
-  padding: 3%;
+  padding: 2% 5%;
   margin-top: 3%;
   border: none;
   text-transform: capitalize;
+}
+
+.freeTrials {
+  padding: 7% 0;
+}
+
+.freeTrials h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+  color: #ffc600;
+}
+
+.freeTrials p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.findMore {
+  background: #555f02;
+  color: #fafffe;
+  font-size: 20px;
+  font-family: 'Dokdo', cursive;
+  padding: 1%;
+  margin-top: 2%;
+  border: none;
+  text-transform: capitalize;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
 }

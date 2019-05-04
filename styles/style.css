@@ -492,9 +492,9 @@ header {
 .icons .iconRowTwo .iconFour .iconText h3,
 .icons .iconRowTwo .iconFour .iconText h3 {
   font-family: 'Dokdo', cursive;
-  font-size: 45px;
+  font-size: 40px;
   line-height: 58px;
-  letter-spacing: 4.9px;
+  letter-spacing: 4.3px;
   color: #ffc600;
 }
 
@@ -621,6 +621,107 @@ header {
   margin-top: 3%;
   border: none;
   text-transform: capitalize;
+}
+
+.mainOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5% 0;
+}
+
+.containerBlog {
+  width: 60%;
+}
+
+.blogSpot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blogSpot h2 {
+  font-family: 'Dokdo', cursive;
+  font-size: 105px;
+  line-height: 69.6px;
+  letter-spacing: 10.9px;
+  color: #ffc600;
+}
+
+.gongPic {
+  margin-top: -30%;
+}
+
+.gongPic img {
+  -webkit-box-shadow: 15px 15px #555f02;
+          box-shadow: 15px 15px #555f02;
+}
+
+.belowGong {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: #555f02;
+  padding-left: 10%;
+}
+
+.belowGong h3 {
+  font-family: 'Dokdo', cursive;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 4.9px;
+  color: #ffc600;
+  padding-top: 5%;
+}
+
+.belowGong p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.belowGong p:first-of-type {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.belowGong p span {
+  font-weight: 700;
+}
+
+.belowGong p {
+  padding: 2% 2% 2% 0;
+}
+
+aside {
+  width: 25%;
+}
+
+.stackedRocks img {
+  -webkit-box-shadow: -15px 15px #555f02;
+          box-shadow: -15px 15px #555f02;
+}
+
+.asideTextContainer {
+  background: #555f02;
 }
 
 .freeTrials {

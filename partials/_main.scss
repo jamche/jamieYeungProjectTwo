@@ -20,10 +20,16 @@
     flex-direction: row;
     padding: 15% 0;
     justify-content: space-between;
+    @media screen and(max-width: $breakLarge){
+      padding: 10% 0;
+    }
 
     .adventuresText{
       width: 70%;
       margin-right: 5%;
+      @media screen and(max-width: $breakLarge){
+        width: 50%;
+      }
     }
       .adventuresText h3{
         @include fontsH3(45px, 58px, 4.9px);
@@ -33,9 +39,16 @@
       }
       .findMore{
         @include buttonStyle(2%, 1%);
+        @media screen and(max-width: $breakLarge){
+          padding: 2%;
+          margin-top: 5%;
+        }
       }
     .adventuresPic{
-      width: 25%;
+      width: 30%;
+      @media screen and(max-width: $breakLarge){
+        width: 50%;
+      }
     }
       .adventuresPic img{
         box-shadow: -15px 15px #555f02;
@@ -60,26 +73,26 @@
     .iconRowOne,
     .iconRowTwo{
       display: flex;
-      margin: 1% auto;   
+      margin: 1% auto;
+      @media screen and(max-width: $breakLarge){
+        flex-direction: column;
+      }   
 
-      .iconText{
-        margin-left: 2%;
-      }
       .iconOne,
       .iconTwo,
       .iconThree,
       .iconFour{
-        display: flex;      
-
-        .iconText h3,
-        .iconText h3,
-        .iconText h3,
+        display: flex; 
+        @media screen and(max-width: $breakLarge){
+          margin: 1% 0;
+        }     
+        
+        .iconText{
+          margin-left: 2%;
+        }
         .iconText h3{
           @include fontsH3(40px, 58px, 4.3px);
         }
-        .iconText p,
-        .iconText p,
-        .iconText p,
         .iconText p{
           @include fontsP(20px, 32px, 2px);
         }
@@ -97,7 +110,9 @@
   .newLocations{
     display: flex;
   }
-  .groupPrograms,
+  .groupPrograms{
+    padding: 5% 0;
+  }
   .newLocations{
     padding: 5% 0;
   }  
@@ -166,7 +181,7 @@
     @include fontsH3(105px, 69.6px, 10.9px);
   }
 .gongPic{
-  margin-top: -30%;
+  margin-top: -25%;
 }
   .gongPic img{
     box-shadow: 15px 15px #555f02;
@@ -352,6 +367,7 @@ aside{
   }
 .infoContainer{
   width: 20%;
+  margin-top: 10%;
   margin-left: 5%;
 
   ul{

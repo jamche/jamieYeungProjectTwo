@@ -9,6 +9,7 @@
 }
 .freeTrials p{
     @include fontsP (20px, 32px, 2px);
+    text-align: left;
   }
 .findMore{
     @include buttonStyle(2%, 1%);
@@ -18,8 +19,6 @@
   text-align: center;
   @include fontsP(20px, 32px, 2px);
 }   
-
-
 //footer blog
 .copyBlog{
   width: 48%;

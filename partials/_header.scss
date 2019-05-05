@@ -85,6 +85,9 @@ header{
   height:110vh;
   background-size: cover;
   background-repeat: no-repeat;
+  @media screen and(max-width: $breakLarge){
+    height: 90vh;
+  }
 }
   .upperHeader{
     display: flex;
@@ -115,22 +118,25 @@ header{
     display: flex;
     margin-top: 15%;
     
-    .headerPic{
-      width: 45%;
+    .headerPic,
+    .headerTextR{
+      width: 50%;
     }
     .headerTextR{
-      width: 55%;
-      margin: 3% 0 0 5%;
+      margin: 2% 5%;
+      height: 100%;
     }
       .headerTextR p{
         @include fontsLato(45px);
       }
       .headerTextR h2{
         @include fontsDokdo(115px);
+        width: 100%;
+        @media screen and(max-width: $breakLarge){
+        font-size: 100px;
       }
+    }
   }
-
-
   .freeTrials{
     display: flex;
     width: 100%;
@@ -158,6 +164,8 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
 }
+// media queries for header
+
 
 
 

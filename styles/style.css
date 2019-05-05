@@ -223,6 +223,12 @@ header {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 1114px) {
+  header {
+    height: 90vh;
+  }
+}
+
 .upperHeader {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,13 +286,14 @@ header {
   margin-top: 15%;
 }
 
-.headerBot .headerPic {
-  width: 45%;
+.headerBot .headerPic,
+.headerBot .headerTextR {
+  width: 50%;
 }
 
 .headerBot .headerTextR {
-  width: 55%;
-  margin: 3% 0 0 5%;
+  margin: 2% 5%;
+  height: 100%;
 }
 
 .headerBot .headerTextR p {
@@ -298,6 +305,13 @@ header {
   font-family: 'Dokdo', cursive;
   font-size: 115px;
   color: #ffc600;
+  width: 100%;
+}
+
+@media screen and (max-width: 1114px) {
+  .headerBot .headerTextR h2 {
+    font-size: 100px;
+  }
 }
 
 .freeTrials {
@@ -362,9 +376,21 @@ header {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1114px) {
+  .adventures {
+    padding: 10% 0;
+  }
+}
+
 .adventures .adventuresText {
   width: 70%;
   margin-right: 5%;
+}
+
+@media screen and (max-width: 1114px) {
+  .adventures .adventuresText {
+    width: 50%;
+  }
 }
 
 .adventures .adventuresText h3 {
@@ -394,8 +420,21 @@ header {
   text-transform: capitalize;
 }
 
+@media screen and (max-width: 1114px) {
+  .adventures .findMore {
+    padding: 2%;
+    margin-top: 5%;
+  }
+}
+
 .adventures .adventuresPic {
-  width: 25%;
+  width: 30%;
+}
+
+@media screen and (max-width: 1114px) {
+  .adventures .adventuresPic {
+    width: 50%;
+  }
 }
 
 .adventures .adventuresPic img {
@@ -436,9 +475,14 @@ header {
   margin: 1% auto;
 }
 
-.icons .iconRowOne .iconText,
-.icons .iconRowTwo .iconText {
-  margin-left: 2%;
+@media screen and (max-width: 1114px) {
+  .icons .iconRowOne,
+  .icons .iconRowTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .icons .iconRowOne .iconOne,
@@ -454,37 +498,37 @@ header {
   display: flex;
 }
 
-.icons .iconRowOne .iconOne .iconText h3,
-.icons .iconRowOne .iconOne .iconText h3,
-.icons .iconRowOne .iconOne .iconText h3,
+@media screen and (max-width: 1114px) {
+  .icons .iconRowOne .iconOne,
+  .icons .iconRowOne .iconTwo,
+  .icons .iconRowOne .iconThree,
+  .icons .iconRowOne .iconFour,
+  .icons .iconRowTwo .iconOne,
+  .icons .iconRowTwo .iconTwo,
+  .icons .iconRowTwo .iconThree,
+  .icons .iconRowTwo .iconFour {
+    margin: 1% 0;
+  }
+}
+
+.icons .iconRowOne .iconOne .iconText,
+.icons .iconRowOne .iconTwo .iconText,
+.icons .iconRowOne .iconThree .iconText,
+.icons .iconRowOne .iconFour .iconText,
+.icons .iconRowTwo .iconOne .iconText,
+.icons .iconRowTwo .iconTwo .iconText,
+.icons .iconRowTwo .iconThree .iconText,
+.icons .iconRowTwo .iconFour .iconText {
+  margin-left: 2%;
+}
+
 .icons .iconRowOne .iconOne .iconText h3,
 .icons .iconRowOne .iconTwo .iconText h3,
-.icons .iconRowOne .iconTwo .iconText h3,
-.icons .iconRowOne .iconTwo .iconText h3,
-.icons .iconRowOne .iconTwo .iconText h3,
-.icons .iconRowOne .iconThree .iconText h3,
-.icons .iconRowOne .iconThree .iconText h3,
-.icons .iconRowOne .iconThree .iconText h3,
 .icons .iconRowOne .iconThree .iconText h3,
 .icons .iconRowOne .iconFour .iconText h3,
-.icons .iconRowOne .iconFour .iconText h3,
-.icons .iconRowOne .iconFour .iconText h3,
-.icons .iconRowOne .iconFour .iconText h3,
-.icons .iconRowTwo .iconOne .iconText h3,
-.icons .iconRowTwo .iconOne .iconText h3,
-.icons .iconRowTwo .iconOne .iconText h3,
 .icons .iconRowTwo .iconOne .iconText h3,
 .icons .iconRowTwo .iconTwo .iconText h3,
-.icons .iconRowTwo .iconTwo .iconText h3,
-.icons .iconRowTwo .iconTwo .iconText h3,
-.icons .iconRowTwo .iconTwo .iconText h3,
 .icons .iconRowTwo .iconThree .iconText h3,
-.icons .iconRowTwo .iconThree .iconText h3,
-.icons .iconRowTwo .iconThree .iconText h3,
-.icons .iconRowTwo .iconThree .iconText h3,
-.icons .iconRowTwo .iconFour .iconText h3,
-.icons .iconRowTwo .iconFour .iconText h3,
-.icons .iconRowTwo .iconFour .iconText h3,
 .icons .iconRowTwo .iconFour .iconText h3 {
   font-family: 'Dokdo', cursive;
   font-size: 40px;
@@ -494,36 +538,12 @@ header {
 }
 
 .icons .iconRowOne .iconOne .iconText p,
-.icons .iconRowOne .iconOne .iconText p,
-.icons .iconRowOne .iconOne .iconText p,
-.icons .iconRowOne .iconOne .iconText p,
-.icons .iconRowOne .iconTwo .iconText p,
-.icons .iconRowOne .iconTwo .iconText p,
-.icons .iconRowOne .iconTwo .iconText p,
 .icons .iconRowOne .iconTwo .iconText p,
 .icons .iconRowOne .iconThree .iconText p,
-.icons .iconRowOne .iconThree .iconText p,
-.icons .iconRowOne .iconThree .iconText p,
-.icons .iconRowOne .iconThree .iconText p,
-.icons .iconRowOne .iconFour .iconText p,
-.icons .iconRowOne .iconFour .iconText p,
-.icons .iconRowOne .iconFour .iconText p,
 .icons .iconRowOne .iconFour .iconText p,
 .icons .iconRowTwo .iconOne .iconText p,
-.icons .iconRowTwo .iconOne .iconText p,
-.icons .iconRowTwo .iconOne .iconText p,
-.icons .iconRowTwo .iconOne .iconText p,
-.icons .iconRowTwo .iconTwo .iconText p,
-.icons .iconRowTwo .iconTwo .iconText p,
-.icons .iconRowTwo .iconTwo .iconText p,
 .icons .iconRowTwo .iconTwo .iconText p,
 .icons .iconRowTwo .iconThree .iconText p,
-.icons .iconRowTwo .iconThree .iconText p,
-.icons .iconRowTwo .iconThree .iconText p,
-.icons .iconRowTwo .iconThree .iconText p,
-.icons .iconRowTwo .iconFour .iconText p,
-.icons .iconRowTwo .iconFour .iconText p,
-.icons .iconRowTwo .iconFour .iconText p,
 .icons .iconRowTwo .iconFour .iconText p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -544,7 +564,10 @@ header {
   display: flex;
 }
 
-.groupPrograms,
+.groupPrograms {
+  padding: 5% 0;
+}
+
 .newLocations {
   padding: 5% 0;
 }
@@ -651,7 +674,7 @@ header {
 }
 
 .gongPic {
-  margin-top: -30%;
+  margin-top: -25%;
 }
 
 .gongPic img {
@@ -928,6 +951,7 @@ textarea {
 
 .infoContainer {
   width: 20%;
+  margin-top: 10%;
   margin-left: 5%;
 }
 
@@ -980,6 +1004,7 @@ textarea {
   line-height: 32px;
   letter-spacing: 2px;
   font-weight: 400;
+  text-align: left;
 }
 
 .findMore {

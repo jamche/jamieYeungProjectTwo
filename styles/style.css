@@ -707,7 +707,7 @@ header {
 }
 
 aside {
-  width: 20%;
+  width: 25%;
 }
 
 .stackedRocks img {
@@ -872,6 +872,94 @@ textarea {
   border: none;
   text-transform: capitalize;
   font-size: 30px;
+}
+
+.contactForm {
+  margin-top: -17%;
+  width: 100%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  background: #262725;
+}
+
+.formContact {
+  -webkit-box-shadow: 15px 15px #ffc600;
+          box-shadow: 15px 15px #ffc600;
+}
+
+.nameEmailContainerContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.commentsInputContact {
+  width: 90%;
+  border: 1px solid #ffc600;
+  margin: 5% auto;
+  padding: 1% 1%;
+}
+
+.contactButton {
+  text-align: center;
+}
+
+.messageButton {
+  width: 90%;
+  background: #555f02;
+  color: #fafffe;
+  font-size: 20px;
+  font-family: 'Dokdo', cursive;
+  padding: 1% 5%;
+  margin-top: 2% 0;
+  border: none;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
+.infoContainer {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.infoContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.infoContainer li i {
+  font-size: 20px;
+  color: #ffc600;
+}
+
+.contactInfo p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.contactInfo p:first-child {
+  padding: 10% 0;
+}
+
+.contactInfo p:last-child {
+  text-transform: uppercase;
 }
 
 .freeTrials {

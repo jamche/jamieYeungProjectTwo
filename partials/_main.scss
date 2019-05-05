@@ -201,7 +201,7 @@
     }
 // side aside styling
 aside{
-  width: 20%;
+  width: 25%;
 }  
   .stackedRocks img{
     box-shadow: -15px 15px #555f02;
@@ -272,6 +272,7 @@ aside{
   padding-bottom: 5%;
 }
 
+
 .nameEmailContainer label{
   color:#fafffe;
 }
@@ -314,6 +315,64 @@ aside{
 
 // contact html styling
 
+.contactForm{
+  margin-top: -17%;
+  width: 100%;
+}
+  .contactForm input,
+  .contactForm textarea{
+    background: #262725;
+  }
+  .formContact{
+    box-shadow: 15px 15px #ffc600;
+  }
+
+.nameEmailContainerContact{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+.commentsInputContact{
+  width: 90%;
+  border: 1px solid #ffc600;
+  margin: 5% auto;
+  padding: 1% 1%;
+}
+
+.contactButton{
+  text-align: center;
+}
+  .messageButton{
+    width: 90%;
+    @include buttonStyle(2% 0, 1% 5%);
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+.infoContainer{
+  width: 20%;
+  margin-left: 5%;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+    li i{
+      font-size: 20px;
+      color: #ffc600;
+    }
+}
+.contactInfo p{
+  @include fontsP(20px, 32px, 2px);
+}
+.contactInfo p:first-child{
+  padding: 10% 0;
+}
+.contactInfo p:last-child{
+  text-transform: uppercase;
+}
 
 // textarea{
 //   width: 100%;

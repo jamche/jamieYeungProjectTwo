@@ -17,58 +17,66 @@
     </div>
     <nav class="navbar">
       <ul>
-        <li><a href="#">home</a></li>
+        <li><a href="index.html">home</a></li>
         <li><a href="#">about</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
       </ul>
     </nav>
   </div>
+  <div class="blogSpot wrapper">
+    <h2>Get in Touch</h2>
+  </div>
 </header>
 <main class="brownBack">
-  <div class="mainOne">
-    <h2>Get in Touch</h2>
-    <div class="formContact charcoalBack">
-      <form action="">
-        <label for="name">name</label>
-        <input type="text" name="name" placeholder="Name" id="name">
-  
-        <label for="email">email address</label>
-        <input type="email" name="email" placeholder="Email address" id="email">
-  
-        <label for="comments">comment</label>
-        <input type="text" name="comments" placeholder="Comment" id="comments">
-        <button type="submit">Post Comment</button>
+  <div class="wrapper mainOne">
+    <form class="contactForm charcoalBack" action="submit">
+      <div class="charcoalBack formContact">
+        <div class="nameEmailContainerContact">
+          <div class="nameInput">
+            <label class="visuallyHidden" for="name">name</label>
+            <input type="text" name="name" placeholder="Name" id="name">
+          </div>
+          <div class="emailInput">
+            <label class="visuallyHidden" for="email">email address</label>
+            <input type="email" name="email" placeholder="Email address" id="email">
+          </div>
+        </div>
+        <div class="commentsInputContact">
+          <label class="visuallyHidden" for="message">message</label>
+          <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+        </div>
+        <div class="contactButton">
+          <button class="messageButton" type="submit">Submit</button>
+        </div>
       </form>
     </div>
-  </div>
-  <div class="headerContactBot">
-  </div>
-  <div>
-    <div>
-      <ul>
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-      </ul>
+    <div class="infoContainer">
+      <div>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+      </div>
+      <div class="contactInfo">
+        <p>infoemail.com</p>
+        <p>123-456-7890</p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>m5v2d5</p>
+      </div>
     </div>
-    <div>
-      <p>infoemail.com</p>
-      <p>123-456-7890</p>
-      <p>123 Queen Street West</p>
-      <p>Unit 10</p>
-      <p>Toronto, Ontario</p>
-      <p>m5v2d5</p>
-    </div>
+  </div>
   </div>
 </main>
   <footer>
-      <section class="charcoalBack">
-        <div>
-          <p>Copyright &copy 2019 HackerYou</p>
-        </div>
-      </section>
+    <section class="charcoalBack">
+      <div class="copyright">
+        <p>Copyright &copy 2019 HackerYou</p>
+      </div>
+    </section>
   </footer>
 </body>
 </html>

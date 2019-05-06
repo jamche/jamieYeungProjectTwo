@@ -70,7 +70,7 @@ img{
 
 // make text white to see shit
 h1,h2,h3,h4,h5,a,p,li,i{
-  color: white;
+  color: #fafffe;
 }
 // take out after done
 // global styles
@@ -105,14 +105,15 @@ header{
     .navbar{
       display: flex;
       justify-content: flex-end;
-    }
-      .navbar ul{
+
+      ul{
         display: flex;
         justify-content: space-between;
         width: 100%;
         align-items: center;
         @include navStyle(20px, 29px, 1px);
       }
+    }
   }
   .headerBot{
     display: flex;
@@ -125,15 +126,16 @@ header{
     .headerTextR{
       margin: 2% 5%;
       height: 100%;
-    }
-      .headerTextR p{
+    
+      p{
         @include fontsLato(45px);
       }
-      .headerTextR h2{
+      h2{
         @include fontsDokdo(115px);
         width: 100%;
         @media screen and(max-width: $breakLarge){
         font-size: 100px;
+        }
       }
     }
   }
@@ -143,7 +145,6 @@ header{
     flex-direction: column;
     text-align: center;
   }
-
 // blog styling
 .blogHeader{
   background-image:url(../assets/blog-image-1.jpg);

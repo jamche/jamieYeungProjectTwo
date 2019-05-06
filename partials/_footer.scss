@@ -2,15 +2,14 @@
 
 .freeTrials{
   padding: 7% 0;
-}
-
-.freeTrials h3{
+  h3{
   @include fontsH3(45px, 58px, 4.9px);
 }
-.freeTrials p{
+  p{
     @include fontsP (20px, 32px, 2px);
     text-align: left;
   }
+}
 .findMore{
     @include buttonStyle(2%, 1%);
   }
@@ -24,4 +23,9 @@
   width: 48%;
   text-align: right;
   @include fontsP(20px, 32px, 2px);
+  @media screen and(max-width: $breakMedSmall){
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
 }

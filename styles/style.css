@@ -208,7 +208,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, a, p, li, i {
-  color: white;
+  color: #fafffe;
 }
 
 .wrapper {
@@ -574,6 +574,7 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
   }
 }
 
@@ -707,8 +708,23 @@ header {
   padding: 5% 0;
 }
 
+@media screen and (max-width: 900px) {
+  .mainOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .containerBlog {
   width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .containerBlog {
+    width: 100%;
+  }
 }
 
 .blogSpot {
@@ -738,6 +754,13 @@ header {
           box-shadow: 15px 15px #555f02;
 }
 
+@media screen and (max-width: 900px) {
+  .gongPic img {
+    -webkit-box-shadow: 0px 10px 0px 10px #555f02;
+            box-shadow: 0px 10px 0px 10px #555f02;
+  }
+}
+
 .belowGong {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,6 +774,13 @@ header {
   border-style: solid;
   border-color: #555f02;
   padding-left: 16%;
+}
+
+@media screen and (max-width: 900px) {
+  .belowGong {
+    padding: 10%;
+    border-width: 0px 6px 6px 6px;
+  }
 }
 
 .belowGong h3 {
@@ -789,6 +819,12 @@ aside {
   width: 25%;
 }
 
+@media screen and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+}
+
 .stackedRocks img {
   -webkit-box-shadow: -15px 15px #555f02;
           box-shadow: -15px 15px #555f02;
@@ -806,8 +842,7 @@ aside {
   padding: 3%;
 }
 
-.mission h4,
-.recent h4 {
+h4 {
   font-family: 'Lato', sans-serif;
   font-size: 30px;
   line-height: 32px;
@@ -839,6 +874,12 @@ aside {
   width: 60%;
 }
 
+@media screen and (max-width: 900px) {
+  .commentsContainer {
+    width: 100%;
+  }
+}
+
 .commentsContainer h3 {
   font-family: 'Dokdo', cursive;
   font-size: 45px;
@@ -847,6 +888,12 @@ aside {
   color: #ffc600;
   color: #fafffe;
   padding-bottom: 2%;
+}
+
+@media screen and (max-width: 900px) {
+  .commentsContainer h3 {
+    text-align: center;
+  }
 }
 
 .commentImageOne,
@@ -889,10 +936,6 @@ aside {
   padding-bottom: 5%;
 }
 
-.nameEmailContainer label {
-  color: #fafffe;
-}
-
 .nameEmailContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,6 +944,16 @@ aside {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 60%;
+}
+
+@media screen and (max-width: 900px) {
+  .nameEmailContainer {
+    width: 100%;
+  }
+}
+
+.nameEmailContainer label {
+  color: #fafffe;
 }
 
 .nameInput,
@@ -940,6 +993,12 @@ textarea {
   padding: 1% 1%;
 }
 
+@media screen and (max-width: 900px) {
+  .commentsInput {
+    width: 100%;
+  }
+}
+
 .commentButton {
   width: 60%;
   background: #555f02;
@@ -951,6 +1010,12 @@ textarea {
   border: none;
   text-transform: capitalize;
   font-size: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .commentButton {
+    width: 100%;
+  }
 }
 
 .contactForm {
@@ -966,6 +1031,13 @@ textarea {
 .formContact {
   -webkit-box-shadow: 15px 15px #ffc600;
           box-shadow: 15px 15px #ffc600;
+}
+
+@media screen and (max-width: 900px) {
+  .formContact {
+    -webkit-box-shadow: 0px 15px #ffc600;
+            box-shadow: 0px 15px #ffc600;
+  }
 }
 
 .nameEmailContainerContact {
@@ -1011,6 +1083,13 @@ textarea {
   margin-left: 5%;
 }
 
+@media screen and (max-width: 900px) {
+  .infoContainer {
+    width: 90%;
+    margin: 10% auto;
+  }
+}
+
 .infoContainer ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1021,9 +1100,27 @@ textarea {
   width: 80%;
 }
 
+@media screen and (max-width: 900px) {
+  .infoContainer ul {
+    width: 100%;
+  }
+}
+
 .infoContainer li i {
   font-size: 20px;
   color: #ffc600;
+}
+
+@media screen and (max-width: 900px) {
+  .infoContainer li i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactInfo {
+    text-align: center;
+  }
 }
 
 .contactInfo p {
@@ -1036,6 +1133,12 @@ textarea {
 
 .contactInfo p:first-child {
   padding: 10% 0;
+}
+
+@media screen and (max-width: 900px) {
+  .contactInfo p:first-child {
+    padding: 5% 0;
+  }
 }
 
 .contactInfo p:last-child {
@@ -1092,4 +1195,12 @@ textarea {
   line-height: 32px;
   letter-spacing: 2px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  .copyBlog {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
 }

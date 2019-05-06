@@ -90,6 +90,7 @@ header{
   }
   @media screen and(max-width: $breakMedSmall){
     height: 85vh;
+    background-position: right;
   }
 }
   .upperHeader{
@@ -110,6 +111,9 @@ header{
       }
       @media screen and(max-width: $breakSmall){
         margin-top: 10%;
+      }
+      @media screen and(max-width: $breakSmallest){
+        margin-top: 15%;
       }
       h1{
       @include fontsDokdo(41.5px);
@@ -156,7 +160,7 @@ header{
     }
     .headerPic img{
       @media screen and(max-width: $breakMedSmall){
-        border-radius: 50%;
+        display: none;
       }
     }
     .headerPic,

@@ -232,6 +232,7 @@ header {
 @media screen and (max-width: 900px) {
   header {
     height: 85vh;
+    background-position: right;
   }
 }
 
@@ -271,6 +272,12 @@ header {
 @media screen and (max-width: 600px) {
   .upperHeader .mainTitle {
     margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .upperHeader .mainTitle {
+    margin-top: 15%;
   }
 }
 
@@ -356,7 +363,7 @@ header {
 
 @media screen and (max-width: 900px) {
   .headerBot .headerPic img {
-    border-radius: 50%;
+    display: none;
   }
 }
 
@@ -565,15 +572,14 @@ header {
 
 @media screen and (max-width: 1050px) {
   .adventures .adventuresPic img {
-    -webkit-box-shadow: 15px 15px #555f02;
-            box-shadow: 15px 15px #555f02;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .adventures .adventuresPic img {
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    border-radius: 50%;
   }
 }
 
@@ -1331,6 +1337,12 @@ textarea {
 @media screen and (max-width: 900px) {
   .infoContainer li i {
     font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .infoContainer li i {
+    font-size: 30px;
   }
 }
 

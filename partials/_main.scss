@@ -272,8 +272,9 @@
     padding-left: 16%;
     @media screen and(max-width: $breakMedSmall){
       padding: 10%;
-      border-width:0px 6px 6px 6px;
+      border-width:0 0 6px 0;
     }
+
     h3{
       @include fontsH3(45px, 58px, 4.9px);
       padding-top: 5%;
@@ -350,6 +351,10 @@ aside{
   .commentImageTwo{
     display: flex;
     padding: 5% 0;
+    @media screen and(max-width: $breakSmallest){
+    flex-direction: column;
+    }
+
     
       h4{
         @include fontsP(20px, 32px, 2px);
@@ -362,9 +367,16 @@ aside{
   .commentImage{
     width: 20%;
     padding-right: 5%;
+    @media screen and(max-width: $breakSmall){
+      width: 50%;
+    }
+
   }
   .commentText{
     width: 80%;
+    @media screen and(max-width: $breakSmall){
+    width: 100%;
+    }
   }
 
   // form styling

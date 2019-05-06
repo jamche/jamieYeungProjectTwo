@@ -969,7 +969,7 @@ header {
 @media screen and (max-width: 900px) {
   .belowGong {
     padding: 10%;
-    border-width: 0px 6px 6px 6px;
+    border-width: 0 0 6px 0;
   }
 }
 
@@ -1094,6 +1094,16 @@ h4 {
   padding: 5% 0;
 }
 
+@media screen and (max-width: 380px) {
+  .commentImageOne,
+  .commentImageTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .commentImageOne h4,
 .commentImageTwo h4 {
   font-family: 'Lato', sans-serif;
@@ -1118,8 +1128,20 @@ h4 {
   padding-right: 5%;
 }
 
+@media screen and (max-width: 600px) {
+  .commentImage {
+    width: 50%;
+  }
+}
+
 .commentText {
   width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .commentText {
+    width: 100%;
+  }
 }
 
 .blogForm {

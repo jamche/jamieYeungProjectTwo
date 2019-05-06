@@ -88,24 +88,45 @@ header{
   @media screen and(max-width: $breakLarge){
     height: 90vh;
   }
+  @media screen and(max-width: $breakMedSmall){
+    height: 85vh;
+  }
 }
   .upperHeader{
     display: flex;
-
+    @media screen and(max-width: $breakMedSmall){
+      flex-direction: column;
+      justify-content: flex-start;
+    }
     .mainTitle,
     .navbar{
       width: 50%;
       justify-content: space-between;
     }
-    .mainTitle h1{
+    .mainTitle{
+      @media screen and(max-width: $breakMedSmall){
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and(max-width: $breakSmall){
+        margin-top: 10%;
+      }
+      h1{
       @include fontsDokdo(41.5px);
       line-height: 58px;
       letter-spacing: 4.3px;
     }
+  }
     .navbar{
       display: flex;
       justify-content: flex-end;
-
+      @media screen and(max-width: $breakMedSmall){
+        width: 100%;
+        padding-top: 3%;
+      }
+      @media screen and (max-width: $breakSmall){
+        display: none;
+      }
       ul{
         display: flex;
         justify-content: space-between;
@@ -114,11 +135,30 @@ header{
         @include navStyle(20px, 29px, 1px);
       }
     }
+    .hamburger{
+      visibility: hidden;
+      @media screen and (max-width: $breakSmall){
+        visibility: visible;
+        position: absolute;
+        right: 2%;
+        top: 1%;
+        font-size: 30px;
+        color: #fcfbfb;
+      }
+    }
   }
   .headerBot{
     display: flex;
     margin-top: 15%;
-    
+    @media screen and(max-width: $breakMedSmall){
+      justify-content: center;
+      margin-top: 10%;
+    }
+    .headerPic img{
+      @media screen and(max-width: $breakMedSmall){
+        border-radius: 50%;
+      }
+    }
     .headerPic,
     .headerTextR{
       width: 50%;
@@ -126,7 +166,9 @@ header{
     .headerTextR{
       margin: 2% 5%;
       height: 100%;
-    
+      @media screen and(max-width: $breakMedSmall){
+        display: none;
+      }
       p{
         @include fontsLato(45px);
       }

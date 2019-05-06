@@ -23,25 +23,41 @@
     @media screen and(max-width: $breakLarge){
       padding: 10% 0;
     }
-
+    @media screen and(max-width: $breakMedium){
+      flex-direction: column-reverse;
+      padding: 1% 0;
+    }
     .adventuresText{
       width: 70%;
       margin-right: 5%;
       @media screen and(max-width: $breakLarge){
         width: 50%;
       }
-    }
-      .adventuresText h3{
+      @media screen and(max-width: $breakMedium){
+        width: 100%;
+        margin: 2% 0;
+      }
+      h3{
         @include fontsH3(45px, 58px, 4.9px);
+        @media screen and(max-width: $breakSmall){
+          text-align: center;
+        }
       }
-      .adventuresText p{
+      p{
         @include fontsP(20px, 32px, 2px);
+        @media screen and(max-width: $breakSmall){
+          text-align: center;
+        }
       }
+    }
       .findMore{
         @include buttonStyle(2%, 1%);
         @media screen and(max-width: $breakLarge){
           padding: 2%;
           margin-top: 5%;
+        }
+        @media screen and(max-width: $breakSmall){
+          width: 100%;
         }
       }
     .adventuresPic{
@@ -49,20 +65,37 @@
       @media screen and(max-width: $breakLarge){
         width: 50%;
       }
-    }
-      .adventuresPic img{
+      @media screen and(max-width: $breakMedium){
+        width: 100%;
+      }
+    
+      img{
         box-shadow: -15px 15px #555f02;
+        @media screen and(max-width: $breakMedium){
+          box-shadow: 15px 15px #555f02;
+        }
+        @media screen and(max-width: $breakSmall){
+          box-shadow: none;
+        }
       }
     }
+  }
 
   // gallery styling
   .gallery{
     display: flex;
     justify-content: space-between;
     padding: 5% 0;
+    @media screen and(max-width: $breakMedSmall){
+    flex-direction: column;
+    }
   }
     .galleryImg{
       width: 31%;
+      @media screen and(max-width: $breakMedSmall){
+        width: 100%;
+        margin: 1% 0;
+      }
     }
   // icons styling
   .icons{
@@ -85,6 +118,11 @@
         display: flex; 
         @media screen and(max-width: $breakLarge){
           margin: 1% 0;
+        }
+        @media screen and(max-width: $breakSmallest){
+          margin: 5% 0;
+          flex-direction: column;
+          text-align: center;
         }     
         
         .iconText{
@@ -112,14 +150,14 @@
   }
   .groupPrograms{
     padding: 5% 0;
-     @media screen and(max-width: $breakMedium){
+     @media screen and(max-width: $breakLarge){
       flex-direction: column;
       padding: 0;
      }
   }
   .newLocations{
     padding: 0 0 3%;
-    @media screen and(max-width: $breakMedium){
+    @media screen and(max-width: $breakLarge){
       flex-direction: column-reverse;
      }
   }  
@@ -127,7 +165,7 @@
     .newLocationsText{
       width: 40%;
       margin: 0 10%;
-      @media screen and(max-width: $breakMedium){
+      @media screen and(max-width: $breakLarge){
         width: 100%;
         padding: 0 10%;
         margin: 0 auto;
@@ -136,19 +174,19 @@
     .groupProgramsPic,
     .newLocationsPic{
       width: 53%;
-      @media screen and(max-width: $breakMedium){
+      @media screen and(max-width: $breakLarge){
         width: 100%;
       }
     }
     .groupProgramsPic{
       margin-top: -7%;
       margin-right: 10%;
-      @media screen and(max-width: $breakMedium){
+      @media screen and(max-width: $breakLarge){
         margin: 0 0 5%;
       }
         img{
           box-shadow: 15px 15px #ffc600;
-          @media screen and(max-width: $breakMedium){
+          @media screen and(max-width: $breakLarge){
            box-shadow: 0px 0px 0px 10px #ffc600;
          }
       }
@@ -156,13 +194,13 @@
     .newLocationsPic{
       margin-bottom: -10%;
       margin-left: 10%;
-      @media screen and(max-width: $breakMedium){
+      @media screen and(max-width: $breakLarge){
         margin: 5% 0;
       }
     }
       .newLocationsPic img{
         box-shadow: -15px 15px #ffc600;
-         @media screen and(max-width: $breakMedium){
+         @media screen and(max-width: $breakLarge){
            box-shadow: 0px 0px 0px 10px #ffc600;
          }
       }
@@ -332,6 +370,9 @@ aside{
   width: 60%;
    @media screen and(max-width: $breakMedSmall){
     width: 100%;
+  }
+  @media screen and(max-width: $breakSmall){
+    flex-direction: column;
   }
   label{
   color:#fafffe;

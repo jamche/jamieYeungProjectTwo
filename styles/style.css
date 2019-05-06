@@ -906,12 +906,27 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  .blogSpot {
+    margin-top: -10%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .blogSpot h2 {
   font-family: 'Dokdo', cursive;
   font-size: 105px;
   line-height: 69.6px;
   letter-spacing: 10.9px;
   color: #ffc600;
+}
+
+@media screen and (max-width: 900px) {
+  .blogSpot h2 {
+    text-align: center;
+  }
 }
 
 .gongPic {
@@ -1140,6 +1155,14 @@ h4 {
   width: 40%;
 }
 
+@media screen and (max-width: 600px) {
+  .nameInput,
+  .emailInput {
+    width: 100%;
+    margin: 5% 0;
+  }
+}
+
 .nameInput input,
 .emailInput input {
   padding: 0 0 10% 10%;
@@ -1148,6 +1171,13 @@ h4 {
   line-height: 32px;
   letter-spacing: 2px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .nameInput input,
+  .emailInput input {
+    padding: 0 0 3% 5%;
+  }
 }
 
 input,
@@ -1228,6 +1258,15 @@ textarea {
   width: 90%;
   margin: 0 auto;
   padding-top: 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .nameEmailContainerContact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .commentsInputContact {

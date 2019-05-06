@@ -241,9 +241,17 @@
   display: flex;
   height: 100%;
   align-items: center;
+  @media screen and(max-width: $breakMedSmall){
+    margin-top: -10%;
+    justify-content: center;
+  }
+
 }
   .blogSpot h2{
     @include fontsH3(105px, 69.6px, 10.9px);
+    @media screen and(max-width: $breakMedSmall){
+      text-align: center;
+    }
   }
 .gongPic{
   margin-top: -25%;
@@ -382,11 +390,18 @@ aside{
 .emailInput{
   border-bottom: 1px solid #ffc600;
   width: 40%;
+  @media screen and(max-width: $breakSmall){
+    width: 100%;
+    margin: 5% 0;
+  }
 }
   .nameInput input,
   .emailInput input{
     padding:0 0 10% 10%;
     @include fontsP(20px, 32px, 2px);
+    @media screen and(max-width: $breakSmall){
+      padding: 0 0 3% 5%;
+    }
   }
   input,
   textarea{
@@ -438,6 +453,9 @@ aside{
   width: 90%;
   margin: 0 auto;
   padding-top: 5%;
+  @media screen and(max-width: $breakSmall){
+    flex-direction: column;
+  }
 }
 .commentsInputContact{
   width: 90%;

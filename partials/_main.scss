@@ -50,6 +50,7 @@
         }
       }
     }
+    // button styling
       .findMore{
         @include buttonStyle(2%, 1%);
         @media screen and(max-width: $breakLarge){
@@ -60,6 +61,7 @@
           width: 100%;
         }
       }
+    // picture styling
     .adventuresPic{
       width: 30%;
       @media screen and(max-width: $breakLarge){
@@ -96,13 +98,18 @@
         width: 100%;
         margin: 1% 0;
       }
+      img{
+        @media screen and(max-width: $breakMedSmall){
+          border-radius: 50%;
+        }
+      }
     }
   // icons styling
   .icons{
     display: flex;
     flex-direction: column;
     padding: 10% 0;
-
+// style rows
     .iconRowOne,
     .iconRowTwo{
       display: flex;
@@ -110,7 +117,7 @@
       @media screen and(max-width: $breakLarge){
         flex-direction: column;
       }   
-
+      // style each icon box
       .iconOne,
       .iconTwo,
       .iconThree,
@@ -124,23 +131,20 @@
           flex-direction: column;
           text-align: center;
         }     
-        
         .iconText{
           margin-left: 2%;
-        }
-        .iconText h3{
-          @include fontsH3(40px, 58px, 4.3px);
-        }
-        .iconText p{
-          @include fontsP(20px, 32px, 2px);
+        
+          h3{
+            @include fontsH3(40px, 58px, 4.3px);
+          }
+          p{
+            @include fontsP(20px, 32px, 2px);
+          }
         }
       }
       .icon-background{
         color:#555f02;
-      }  
-      // .fas, .far{
-      //     @include iconStyle(50px);
-      // }
+      } 
     }
   }
   // Group Programs styling
@@ -150,14 +154,14 @@
   }
   .groupPrograms{
     padding: 5% 0;
-     @media screen and(max-width: $breakLarge){
+     @media screen and(max-width: $breakSquare){
       flex-direction: column;
       padding: 0;
      }
   }
   .newLocations{
     padding: 0 0 3%;
-    @media screen and(max-width: $breakLarge){
+    @media screen and(max-width: $breakSquare){
       flex-direction: column-reverse;
      }
   }  
@@ -165,28 +169,28 @@
     .newLocationsText{
       width: 40%;
       margin: 0 10%;
-      @media screen and(max-width: $breakLarge){
+      @media screen and(max-width: $breakSquare){
         width: 100%;
-        padding: 0 10%;
+        padding: 5% 10%;
         margin: 0 auto;
       }
     }
     .groupProgramsPic,
     .newLocationsPic{
       width: 53%;
-      @media screen and(max-width: $breakLarge){
+      @media screen and(max-width: $breakSquare){
         width: 100%;
       }
     }
     .groupProgramsPic{
       margin-top: -7%;
       margin-right: 10%;
-      @media screen and(max-width: $breakLarge){
+      @media screen and(max-width: $breakSquare){
         margin: 0 0 5%;
       }
         img{
           box-shadow: 15px 15px #ffc600;
-          @media screen and(max-width: $breakLarge){
+          @media screen and(max-width: $breakSquare){
            box-shadow: 0px 0px 0px 10px #ffc600;
          }
       }
@@ -194,16 +198,16 @@
     .newLocationsPic{
       margin-bottom: -10%;
       margin-left: 10%;
-      @media screen and(max-width: $breakLarge){
+      @media screen and(max-width: $breakSquare){
         margin: 5% 0;
       }
-    }
-      .newLocationsPic img{
+      img{
         box-shadow: -15px 15px #ffc600;
-         @media screen and(max-width: $breakLarge){
-           box-shadow: 0px 0px 0px 10px #ffc600;
-         }
+        @media screen and(max-width: $breakSquare){
+          box-shadow: 0px 0px 0px 10px #ffc600;
+        }
       }
+    }
       .groupProgramsText h3,
       .newLocationsText h3{
         @include fontsH3(45px, 58px, 4.9px);
@@ -256,7 +260,7 @@
 .gongPic{
   margin-top: -25%;
   img{
-    box-shadow: 15px 15px #555f02;
+    box-shadow: 14px 15px #555f02;
     @media screen and(max-width: $breakMedSmall){
     box-shadow: 0px 10px 0px 10px #555f02; 
     }
@@ -266,11 +270,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-width: 6px 6px 6px 0;
-    border-style: solid; 
-    border-color: #555f02;
-    padding-left: 16%;
-    @media screen and(max-width: $breakMedSmall){
+  }
+    .gongText{
+      border-width: 0 6px 6px 0;
+      border-style: solid;
+      border-color: #555f02;
+      padding-left: 16%;
+      margin-right: -14px;
+      @media screen and(max-width: $breakMedSmall){
       padding: 10%;
       border-width:0 0 6px 0;
     }
@@ -309,6 +316,7 @@ aside{
     border-width: 6px 0 6px 6px;
     border-style: solid; 
     border-color: #555f02;
+    margin-left: -15px;
   }
     .mission,
     .recent{
@@ -320,17 +328,17 @@ aside{
         padding:2% 0;
       }
       .mission p,
-      .recent li{
+      .recent li a{
         @include fontsP(20px, 32px, 2px);
       }
-        .recent ul li::before{
-          content: "\2022"; 
-          color: #ffc600;
-          font-size:1em;
-          padding-right: 1em;
-          position: relative;
-          top: 0em;
-        }
+      .recent ul{
+        padding-left: 3%;
+      }
+      .recent ul li{
+        list-style-type:disc;
+        color:#ffc600;
+      }
+      
 // comments section styling
 
 .commentsContainer{
@@ -347,22 +355,21 @@ aside{
      }
     }
   }
+  // style comments blocks
   .commentImageOne,
   .commentImageTwo{
     display: flex;
     padding: 5% 0;
     @media screen and(max-width: $breakSmallest){
     flex-direction: column;
+    } 
+    h4{
+      @include fontsP(20px, 32px, 2px);
+      color:#ffc600;
     }
-
-    
-      h4{
-        @include fontsP(20px, 32px, 2px);
-        color:#ffc600;
-      }
-      p{
-        @include fontsP(20px, 32px, 2px);
-      }
+    p{
+      @include fontsP(20px, 32px, 2px);
+    }
   }
   .commentImage{
     width: 20%;
@@ -370,7 +377,6 @@ aside{
     @media screen and(max-width: $breakSmall){
       width: 50%;
     }
-
   }
   .commentText{
     width: 80%;
@@ -447,12 +453,13 @@ aside{
 .contactForm{
   margin-top: -17%;
   width: 100%;
-}
-  .contactForm input,
-  .contactForm textarea{
+
+  input,
+  textarea{
     background: #262725;
   }
-  .formContact{
+}  
+  .boxShadowForm{
     box-shadow: 15px 15px #ffc600;
     @media screen and(max-width: $breakMedSmall){
     box-shadow: 0px 15px #ffc600;
@@ -531,9 +538,3 @@ aside{
   }
 } 
 
-// textarea{
-//   width: 100%;
-//   background: #1e140e;
-//   border: none;
-//   color:  color:#fafffe;
-// }

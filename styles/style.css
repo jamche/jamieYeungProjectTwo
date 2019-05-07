@@ -613,6 +613,12 @@ header {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .galleryImg img {
+    border-radius: 50%;
+  }
+}
+
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,7 +749,7 @@ header {
   padding: 5% 0;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .groupPrograms {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -757,7 +763,7 @@ header {
   padding: 0 0 3%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .newLocations {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -772,11 +778,11 @@ header {
   margin: 0 10%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .groupProgramsText,
   .newLocationsText {
     width: 100%;
-    padding: 0 10%;
+    padding: 5% 10%;
     margin: 0 auto;
   }
 }
@@ -786,7 +792,7 @@ header {
   width: 53%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .groupProgramsPic,
   .newLocationsPic {
     width: 100%;
@@ -798,7 +804,7 @@ header {
   margin-right: 10%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .groupProgramsPic {
     margin: 0 0 5%;
   }
@@ -809,7 +815,7 @@ header {
           box-shadow: 15px 15px #ffc600;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .groupProgramsPic img {
     -webkit-box-shadow: 0px 0px 0px 10px #ffc600;
             box-shadow: 0px 0px 0px 10px #ffc600;
@@ -821,7 +827,7 @@ header {
   margin-left: 10%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .newLocationsPic {
     margin: 5% 0;
   }
@@ -832,7 +838,7 @@ header {
           box-shadow: -15px 15px #ffc600;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1300px) {
   .newLocationsPic img {
     -webkit-box-shadow: 0px 0px 0px 10px #ffc600;
             box-shadow: 0px 0px 0px 10px #ffc600;
@@ -940,8 +946,8 @@ header {
 }
 
 .gongPic img {
-  -webkit-box-shadow: 15px 15px #555f02;
-          box-shadow: 15px 15px #555f02;
+  -webkit-box-shadow: 14px 15px #555f02;
+          box-shadow: 14px 15px #555f02;
 }
 
 @media screen and (max-width: 900px) {
@@ -960,20 +966,24 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  border-width: 6px 6px 6px 0;
+}
+
+.gongText {
+  border-width: 0 6px 6px 0;
   border-style: solid;
   border-color: #555f02;
   padding-left: 16%;
+  margin-right: -14px;
 }
 
 @media screen and (max-width: 900px) {
-  .belowGong {
+  .gongText {
     padding: 10%;
     border-width: 0 0 6px 0;
   }
 }
 
-.belowGong h3 {
+.gongText h3 {
   font-family: 'Dokdo', cursive;
   font-size: 45px;
   line-height: 58px;
@@ -982,7 +992,7 @@ header {
   padding-top: 5%;
 }
 
-.belowGong p {
+.gongText p {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -990,18 +1000,18 @@ header {
   font-weight: 400;
 }
 
-.belowGong p:first-of-type {
+.gongText p:first-of-type {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
-.belowGong p span {
+.gongText p span {
   font-weight: 700;
 }
 
-.belowGong p {
+.gongText p {
   padding: 2% 2% 2% 0;
 }
 
@@ -1025,6 +1035,7 @@ aside {
   border-width: 6px 0 6px 6px;
   border-style: solid;
   border-color: #555f02;
+  margin-left: -15px;
 }
 
 .mission,
@@ -1043,7 +1054,7 @@ h4 {
 }
 
 .mission p,
-.recent li {
+.recent li a {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: 32px;
@@ -1051,13 +1062,13 @@ h4 {
   font-weight: 400;
 }
 
-.recent ul li::before {
-  content: "\2022";
+.recent ul {
+  padding-left: 3%;
+}
+
+.recent ul li {
+  list-style-type: disc;
   color: #ffc600;
-  font-size: 1em;
-  padding-right: 1em;
-  position: relative;
-  top: 0em;
 }
 
 .commentsContainer {
@@ -1264,13 +1275,13 @@ textarea {
   background: #262725;
 }
 
-.formContact {
+.boxShadowForm {
   -webkit-box-shadow: 15px 15px #ffc600;
           box-shadow: 15px 15px #ffc600;
 }
 
 @media screen and (max-width: 900px) {
-  .formContact {
+  .boxShadowForm {
     -webkit-box-shadow: 0px 15px #ffc600;
             box-shadow: 0px 15px #ffc600;
   }

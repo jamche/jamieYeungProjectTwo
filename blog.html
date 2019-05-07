@@ -23,33 +23,40 @@
           <li><a href="contact.html">contact</a></li>
         </ul>
       </nav>
+      <!-- for hamburger button when resized to mobile -->
       <div class="hamburger">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars" aria-hidden="true" title="select to open navigation menu"></i>
       </div>
     </div>
     <div class="blogSpot wrapper">
       <h2>Blog</h2>
     </div>
   </header>
+  <!-- end of header -->
 <!-- start of main -->
   <main class="brownBack">
-    <div class="mainOne">
+    <!-- contains blog until comments sections -->
+  <div class="mainOne">
     <div class="containerBlog">
       <div class="gongPic">
         <img src="assets/post-image.jpg" alt="picture of a golden gong with charcoal outline on a white background">
       </div>
+      <!-- text under gong picture -->
       <div class="belowGong">
-        <h3>Come and discover our space</h3>
-        <p>Monday May 5th, 2019 by <span>Saron</span></p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed rerum fugiat numquam suscipit, delectus dolorum eligendi aliquid, porro mollitia reprehenderit minus totam enim! Illo quod omnis in animi aperiam.</p>
+        <div class="gongText">
+          <h3>Come and discover our space</h3>
+          <p>Monday May 5th, 2019 by <span>Saron</span></p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed rerum fugiat numquam suscipit, delectus dolorum eligendi aliquid, porro mollitia reprehenderit minus totam enim! Illo quod omnis in animi aperiam.</p>
 
-        <p>Quibusdam, corrupti? Quia illo repellendus eos at culpa. Dignissimos quaerat reprehenderit reiciendis voluptatem qui quisquam dicta est aliquid, facere nisi dolorem impedit veniam earum eum rerum quasi corrupti odit fugiat?</p>
+          <p>Quibusdam, corrupti? Quia illo repellendus eos at culpa. Dignissimos quaerat reprehenderit reiciendis voluptatem qui quisquam dicta est aliquid, facere nisi dolorem impedit veniam earum eum rerum quasi corrupti odit fugiat?</p>
 
-        <p>Consequuntur est in, omnis tempore dicta? Culpa esse iure, pariatur quaerat voluptate quos qui doloribus, aliquid dolore nesciunt debitis, fugit amet ipsa! Tempora maxime vero impedit dolorum optio. Libero amet consectetur adipisicing elit. Nostrum in repudiandae architecto voluptates harum culpa, fugiat nulla perferendis sed libero, dolor aperiam enim blanditiis tempora voluptatem quia et cum odio?</p>
+          <p>Consequuntur est in, omnis tempore dicta? Culpa esse iure, pariatur quaerat voluptate quos qui doloribus, aliquid dolore nesciunt debitis, fugit amet ipsa! Tempora maxime vero impedit dolorum optio. Libero amet consectetur adipisicing elit. Nostrum in repudiandae architecto voluptates harum culpa, fugiat nulla perferendis sed libero, dolor aperiam enim blanditiis tempora voluptatem quia et cum odio?</p>
 
-        <p>In assumenda, quos rerum officiis commodi perferendis doloribus itaque eos enim maxime accusamus quaerat voluptatum dolorem deleniti, magnam, ratione quam nostrum aut consequuntur qui dolor veritatis? At obcaecati placeat quis.</p>
+          <p>In assumenda, quos rerum officiis commodi perferendis doloribus itaque eos enim maxime accusamus quaerat voluptatum dolorem deleniti, magnam, ratione quam nostrum aut consequuntur qui dolor veritatis? At obcaecati placeat quis.</p>
+        </div>
       </div>
     </div>
+    <!-- aside div on side -->
   <aside>
       <div class="stackedRocks">
         <img src="assets/sidebar-image.jpg" alt="picture of flat stones stacked on top of each other ">
@@ -62,10 +69,10 @@
         <div class="recent">
           <h4>Recent Posts</h4>
           <ul>
-            <li>Donec facillisis tortor ut</li>
-            <li>Augue lacinia at viverra</li>
-            <li>Sempera sed sapien metus</li>
-            <li>Scelerisque nec pharetra</li>
+            <li> <a href="#"> Donec facillisis tortor ut</a></li>
+            <li> <a href="#"> Augue lacinia at viverra</a></li>
+            <li> <a href="#"> Sempera sed sapien metus</a></li>
+            <li> <a href="#"> Scelerisque nec pharetra</a></li>
           </ul>
         </div>
       </div>
@@ -73,48 +80,54 @@
   </aside>
 </div>
     <!-- comments section -->
-    <section class="wrapper">
-      <div class="commentsContainer">
-        <h3>Comments:</h3>
-        <div class="commentImageOne">
-          <div class="commentImage">
-            <img src="assets/comment-image.jpg" alt="photo of man in black shirt and black hat">
-          </div>
-          <div class="commentText">
-            <h4>Tuesday October 9th, 2019 by Davin</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
-          </div>
+  <section class="wrapper">
+    <div class="commentsContainer">
+      <h3>Comments:</h3>
+      <!-- first comment image block -->
+      <div class="commentImageOne">
+        <div class="commentImage">
+          <img src="assets/comment-image.jpg" alt="photo of man in black shirt and black hat">
         </div>
-        <div class="commentImageTwo">
-          <div class="commentImage">
-            <img src="assets/comment-image2.jpg" alt="photo of two zebras in the wold">
-          </div>
-          <div class="commentText">
-            <h4>Wednesday October 10th, 2019 by Lisa</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
-          </div>
+        <div class="commentText">
+          <h4>Tuesday October 9th, 2019 by Davin</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
         </div>
       </div>
-    </section>
+      <!-- second comment image block -->
+      <div class="commentImageTwo">
+        <div class="commentImage">
+          <img src="assets/comment-image2.jpg" alt="photo of two zebras in the wild">
+        </div>
+        <div class="commentText">
+          <h4>Wednesday October 10th, 2019 by Lisa</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolore voluptates aut explicabo voluptatem, enim, mollitia vel voluptas, adipisci suscipit quisquam et asperiores maxime consequuntur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- form sign up -->
     <section>
       <form class="wrapper blogForm" action="submit">
         <div class="nameEmailContainer">
+          <!-- input name -->
           <div class="nameInput">
             <label class="visuallyHidden" for="name">name</label>
             <input type="text" name="name" placeholder="Name" id="name">
           </div>
+          <!-- input email -->
           <div class="emailInput">
             <label class="visuallyHidden" for="email">email address</label>
             <input type="email" name="email" placeholder="Email address" id="email">
           </div>
         </div>
+        <!-- input comments -->
         <div class="commentsInput">
           <label class="visuallyHidden" for="comments">comment</label>
           <textarea name="comments" id="comments" placeholder="Comment" cols="30" rows="10"></textarea>
         </div>
+        <!-- button to submit -->
         <div>
-          <button class="commentButton" type="submit">Post Comment</button>
+          <button class="commentButton" aria-label="post your comment">Post Comment</button>
         </div>
       </form>
     </section>

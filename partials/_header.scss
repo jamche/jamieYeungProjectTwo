@@ -1,3 +1,4 @@
+// all mixins
 @mixin fontsDokdo($sizeValue) {
   font-family: 'Dokdo', cursive;
   font-size: ($sizeValue);
@@ -68,12 +69,11 @@ img{
   width: 100%;
 }
 
-// make text white to see shit
+// text color
 h1,h2,h3,h4,h5,a,p,li,i{
   color: #fafffe;
 }
-// take out after done
-// global styles
+// end of global styles
 
 .wrapper{
   margin: 0 10%;
@@ -211,10 +211,7 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
 }
-// media queries for header
-
-
-
+// references
 
 
 // https://stackoverflow.com/questions/23348266/equal-padding-for-different-sized-icons

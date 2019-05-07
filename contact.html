@@ -23,18 +23,20 @@
         <li><a href="contact.html">contact</a></li>
       </ul>
     </nav>
+    <!-- hamburger button for resize -->
     <div class="hamburger">
-      <i class="fa fa-bars"></i>
+      <i class="fa fa-bars" aria-hidden="true" title="select to open navigation menu"></i>
     </div>
   </div>
   <div class="blogSpot wrapper">
     <h2>Get in Touch</h2>
   </div>
 </header>
+<!-- start of main form -->
 <main class="brownBack">
   <div class="wrapper mainOne">
     <form class="contactForm charcoalBack" action="submit">
-      <div class="charcoalBack formContact">
+      <div class="charcoalBack boxShadowForm">
         <div class="nameEmailContainerContact">
           <div class="nameInput">
             <label class="visuallyHidden" for="name">name</label>
@@ -50,17 +52,17 @@
           <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
         </div>
         <div class="contactButton">
-          <button class="messageButton" type="submit">Submit</button>
+          <button class="messageButton" aria-label="submit your message" >Submit</button>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
     <div class="infoContainer">
       <div>
         <ul>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true" title="go to facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram" aria-hidden="true" title="go to instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter" aria-hidden="true" title="go to twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true" title="go to whatsapp"></i></a></li>
         </ul>
       </div>
       <div class="contactInfo">
@@ -70,8 +72,7 @@
         <p>Toronto, Ontario</p>
         <p>m5v2d5</p>
       </div>
-    </div>
-  </div>
+    </div> 
   </div>
 </main>
   <footer>

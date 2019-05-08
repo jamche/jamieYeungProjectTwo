@@ -78,7 +78,7 @@ a:focus,
 input:focus, 
 button:focus, 
 select:focus,
-textarea:focus{
+form:focus{
   text-decoration: underline;
   color: #ffc600;
 }
@@ -89,7 +89,7 @@ textarea:focus{
 }
 // home styling
 header{
-  background-image:url(../assets/home-image-1.jpg);
+  background-image:url(../assets/homeImage1.jpg);
   background-position: center center;
   height:110vh;
   background-size: cover;
@@ -240,7 +240,7 @@ ul li a:hover:after {
   }
 // blog styling
 .blogHeader{
-  background-image:url(../assets/blog-image-1.jpg);
+  background-image:url(../assets/blogImage1.jpg);
   background-position: center center;
   height:80vh;
   background-size: cover;
@@ -252,7 +252,7 @@ ul li a:hover:after {
 
 //contact styling
 .contactHeader{
-  background-image:url(../assets/contact-image-1.jpg);
+  background-image:url(../assets/contactImage1.jpg);
   background-position: center center;
   height:80vh;
   background-size: cover;

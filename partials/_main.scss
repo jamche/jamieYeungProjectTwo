@@ -305,6 +305,7 @@
 aside{
   width: 25%;
       @media screen and(max-width: $breakMedSmall){
+        // removed aside at mobile design as I felt the infomration was not adding enough to the main content to make the webpage longer.
         display: none;
       }
 }  

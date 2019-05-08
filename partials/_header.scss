@@ -73,6 +73,14 @@ img{
 h1,h2,h3,h4,h5,a,p,li,i{
   color: #fafffe;
 }
+// accessibility focus
+a:focus, 
+input:focus, 
+button:focus, 
+select:focus{
+  text-decoration: underline;
+  color: #ffc600;
+}
 // end of global styles
 
 .wrapper{
@@ -172,6 +180,8 @@ ul li a:hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%; }
+
+
 // end of hover for na  
     }
     .hamburger{
@@ -195,6 +205,7 @@ ul li a:hover:after {
     }
     .headerPic img{
       @media screen and(max-width: $breakMedSmall){
+        // removed the picture as I found it does not fit well within the mobile design whether if it is smaller or in another section
         display: none;
       }
     }

@@ -77,7 +77,8 @@ h1,h2,h3,h4,h5,a,p,li,i{
 a:focus, 
 input:focus, 
 button:focus, 
-select:focus{
+select:focus,
+textarea:focus{
   text-decoration: underline;
   color: #ffc600;
 }
